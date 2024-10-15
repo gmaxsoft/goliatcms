@@ -1,0 +1,4 @@
+body,html{height:100vh!important;display:block}
+.container{height:100%}
+.img-responsive{display:block;max-width:100%;height:auto}
+.logo-mwp{max-width:300px;margin-bottom:4rem;margin-left:auto;margin-right:auto}

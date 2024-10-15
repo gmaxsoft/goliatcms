@@ -1,0 +1,17 @@
+Options +FollowSymLinks
+RewriteEngine On
+RewriteBase /
+DirectoryIndex index.php
+
+#accept loading of actual files and directories
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+
+#send everything else to the index page
+RewriteRule ^([^/]*)/([^/]*)/(.*)/$  index.php?module=$1&method=$2&params=$3 [NC,L]
+RewriteRule ^([^/]*)/([^/]*)/$  index.php?module=$1&method=$2 [NC,L]
+RewriteRule ^([^/]*)/$ index.php?module=$1 [NC,L]
+
+ErrorDocument 404 /page_404.php
+ErrorDocument 500 /page_500.php
+ErrorDocument 503 /page_503.php
