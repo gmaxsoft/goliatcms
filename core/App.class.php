@@ -67,7 +67,7 @@ class App
 		if (file_exists($pathToModel)) {
 			require $pathToModel;
 		} else
-			die('Brak pliku Model.class.php w module.');
+			die('Access denied.');
 
 		/** import controller **/
 		$pathToController = "../modules/" . lcfirst($this->module) . "/Controller.class.php";

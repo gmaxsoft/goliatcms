@@ -2,3 +2,4 @@ body,html{height:100vh!important;display:block}
 .img-responsive{display:block;max-width:100%;height:auto}
 .logo-mwp{max-width:300px;margin-bottom:4rem;margin-left:auto;margin-right:auto}
 .bg-grey{background:#f1f1f1}
+.login_error{display:block;width:100%;padding-top:5px;color:red}

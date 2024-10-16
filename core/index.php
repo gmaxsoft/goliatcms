@@ -1,0 +1,1 @@
+<?php echo 'crm.maxsoft.pl'; ?>
